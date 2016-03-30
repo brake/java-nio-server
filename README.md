@@ -7,5 +7,5 @@ Inspired by ideas from [here](http://tutorials.jenkov.com/java-nio/non-blocking-
 Server objectives:
  - listen a `5050` port in a blocking mode
  - accept any connection
- - serve each accepted connection in nonblocking mode in separate thread by returning back any bytes received
+ - serve all accepted connections in nonblocking mode in a separate thread by returning back to sender any bytes previously received
  - close connection on receiving a "stop word" (here it's `Bye.`).  
